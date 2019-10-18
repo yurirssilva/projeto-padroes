@@ -1,0 +1,19 @@
+.numero{
+    text-align: center;
+    border-radius: 15px;
+    margin: 5px 10px;
+}
+
+.titulo{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.altura{
+    height: 100%;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
