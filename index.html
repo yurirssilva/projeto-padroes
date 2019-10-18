@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,42 +10,38 @@
     <link rel="stylesheet" href="/assets/css/960.css">
     <link rel="stylesheet" href="/assets/css/text.css">
     <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    <div class="container_12">
-        <div class="sidebar grid_4">
+    <div class="container_12 altura">
+        <div class="sidebar grid_4 altura">
             <div class="input-button">
+                <h2 class="titulo">MENU</h2>
                 <label for="input-name">Nome do Jogador</label>
                 <div>
-                    <input type="text" name="input-name" id="input-name">
-                    <button onclick="add()">Add</button>
+                    <input type="text" name="input-name" id="input-name" onkeypress="btnPress(event)">
+                    <button onclick="add()" id="input-btn">Adicionar</button>
                 </div>
                 <div id="myList" class="container_16 grid_4">
-    
+
                 </div>
                 <!-- <button>Iniciar</button> -->
             </div>
             <div>
-                <button>Iniciar</button>
+                <span class="titulo">LISTA DE JOGADORES</span>
+                <div id='lista-jogadores'>
+                </div>
+
+            </div>
+            <div>
+                <button onclick="gerar()" disabled="true" id='sorteio-btn'>Sortear</button>
+                <button onclick="reiniciar()">Reiniciar</button>
             </div>
         </div>
-        <div class="principal grid_8" id="principal">
-            <div class="grid_4">
-                <span class="grid_4">Bingo</span>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">X</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <div class="grid_1">1</div>
-                <!-- <div>1 &nbsp;1 &nbsp;1 &nbsp;</div>
-                <div>1 &nbsp;1 &nbsp;1 &nbsp;</div>
-                <div>1 &nbsp;1 &nbsp;1 &nbsp;</div> -->
-            </div>
+        <div class="principal" id="principal">
         </div>
     </div>
 </body>
+
 </html>
